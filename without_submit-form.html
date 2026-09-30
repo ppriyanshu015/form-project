@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form Using onsubmit Validation</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Registration Form</h1>
+
+    <form id="validationForm" onsubmit="return validateForm()">
+
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="name">Full Name</label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+            >
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+            >
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label for="password">Password</label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+            >
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Confirm your password"
+            >
+        </div>
+
+        <!-- Mobile -->
+        <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+
+            <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                placeholder="Enter your mobile number"
+            >
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+
+            <input
+                type="date"
+                id="dob"
+                name="dob"
+            >
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+            <label>Gender</label>
+
+            <div class="radio-group">
+
+                <label>
+                    <input type="radio" name="gender" value="Male">
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Female">
+                    Female
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="Other">
+                    Other
+                </label>
+
+            </div>
+        </div>
+
+        <!-- Course -->
+        <div class="form-group">
+            <label for="course">Course</label>
+
+            <select id="course" name="course">
+
+                <option value="">Select Course</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+                <option value="BSc">B.Sc</option>
+                <option value="MSc">M.Sc</option>
+
+            </select>
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+            <label for="address">Address</label>
+
+            <textarea
+                id="address"
+                name="address"
+                rows="4"
+                placeholder="Enter your address"
+            ></textarea>
+        </div>
+
+        <!-- City -->
+        <div class="form-group">
+            <label for="city">City</label>
+
+            <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Enter your city"
+            >
+        </div>
+
+        <!-- State -->
+        <div class="form-group">
+            <label for="state">State</label>
+
+            <input
+                type="text"
+                id="state"
+                name="state"
+                placeholder="Enter your state"
+            >
+        </div>
+
+        <!-- Pincode -->
+        <div class="form-group">
+            <label for="pincode">Pincode</label>
+
+            <input
+                type="text"
+                id="pincode"
+                name="pincode"
+                placeholder="Enter pincode"
+            >
+        </div>
+
+        <!-- Terms -->
+        <div class="checkbox-group">
+
+            <label>
+                <input type="checkbox" id="terms">
+                I agree to the terms and conditions
+            </label>
+
+        </div>
+
+        <!-- Actual Submit Button -->
+        <button type="submit">
+            Submit
+        </button>
+
+        <button type="reset" class="reset-button">
+            Reset
+        </button>
+
+        <!-- Message -->
+        <p id="message"></p>
+
+    </form>
+
+</div>
+
+<!-- External JavaScript -->
+<script src="js/without_submit-form.js"></script>
+
+</body>
+</html>
